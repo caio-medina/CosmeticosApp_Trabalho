@@ -22,8 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:id="@+id/button"
-        android:layout_gravity="bottom" />
+        android:id="@+id/bt_login"
+        android:layout_gravity="bottom"
+        android:onClick="chamaTelaLogin"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -35,7 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cadastro"
-        android:id="@+id/button2"
-        android:layout_gravity="bottom" />
+        android:id="@+id/bt_cadastro"
+        android:layout_gravity="bottom"
+        android:onClick="chamaTelaCadastro"/>
 
 </LinearLayout>
