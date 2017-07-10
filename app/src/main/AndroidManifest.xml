@@ -19,7 +19,8 @@
         <activity android:name=".Login" />
         <activity android:name=".Menu_principal" />
         <activity android:name=".Corpo" />
-        <activity android:name=".Rosto"></activity>
+        <activity android:name=".Rosto" />
+        <activity android:name=".Carrinho"></activity>
     </application>
 
 </manifest>

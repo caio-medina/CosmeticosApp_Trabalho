@@ -33,21 +33,24 @@
             android:id="@+id/bt_Corpo"
             android:layout_alignParentTop="true"
             android:layout_alignEnd="@+id/linearLayout"
-            android:layout_marginTop="120dp" />
+            android:layout_marginTop="120dp"
+            android:onClick="chamaTelaCorpo" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rosto"
-            android:id="@+id/bt_rosto"
-            android:layout_marginTop="30dp" />
+            android:id="@+id/bt_Rosto"
+            android:layout_marginTop="30dp"
+            android:onClick="chamaTelaRosto" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Carrinho"
             android:id="@+id/bt_Carrinho"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="30dp"
+            android:onClick="chamaTelaCarrinho" />
 
     </LinearLayout>
 
