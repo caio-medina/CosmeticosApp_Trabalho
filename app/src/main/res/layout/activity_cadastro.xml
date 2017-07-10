@@ -8,14 +8,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="a2017_1.pooa.iff.br.cosmeticosapp_trabalho.Cadastro"
-    android:background="@color/colorAccent"
-    android:orientation="horizontal">
+    android:background="@color/colorAccent">
 
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="442dp"
         android:weightSum="1">
 
         <TextView
@@ -24,13 +23,13 @@
             android:text="Cadastrar"
             android:id="@+id/textView1"
             android:layout_gravity="center_horizontal"
-            android:textSize="30dp" />
+            android:textSize="40dp" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
             android:layout_marginLeft="50dp">
 
             <TextView
@@ -50,7 +49,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="50dp"
             android:layout_weight="0.08">
 
@@ -72,7 +71,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="50dp">
 
             <TextView
@@ -85,6 +84,8 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
                 android:id="@+id/edtSenha"
                 android:layout_weight="1"
                 android:hint="Digite sua senha" />
@@ -94,7 +95,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="50dp">
 
             <TextView
@@ -115,9 +116,8 @@
 
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="50dp">
 
             <TextView
@@ -134,17 +134,29 @@
                 android:layout_weight="1"
                 android:hint="Digite seu cpf" />
 
-        </LinearLayout>
 
-        <Button
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Confirmar"
-            android:id="@+id/btConfirmar"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp" />
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmar"
+                android:id="@+id/btConfirmarCadastro"
+                android:onClick="chamaTelaMenu" />
+
+        </LinearLayout>
+
+
 
     </LinearLayout>
+
+
 
 
 
