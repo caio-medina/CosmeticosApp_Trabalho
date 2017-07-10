@@ -47,7 +47,8 @@
                 android:layout_height="wrap_content"
                 android:text="Adicionar ao Carrinho"
                 android:id="@+id/bt_AddCarrinho"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:onClick="chamaTelaCarrinho" />
 
         </LinearLayout>
 
