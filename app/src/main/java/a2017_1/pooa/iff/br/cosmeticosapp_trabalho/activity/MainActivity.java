@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import a2017_1.pooa.iff.br.cosmeticosapp_trabalho.Login;
 import a2017_1.pooa.iff.br.cosmeticosapp_trabalho.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     public void chamaTelaLogin(View v) {
         Toast.makeText(this, "Botão funcionando", Toast.LENGTH_SHORT);
 
-        Intent intent = new Intent(MainActivity.this, Login.class);
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intent);
     }
 

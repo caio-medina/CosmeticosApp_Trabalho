@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.CadastroActivity" />
-        <activity android:name=".Login" />
+        <activity android:name=".activity.LoginActivity" />
         <activity android:name=".Menu_principal" />
         <activity android:name=".Corpo" />
         <activity android:name=".Rosto" />
