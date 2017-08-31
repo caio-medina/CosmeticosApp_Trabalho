@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="a2017_1.pooa.iff.br.cosmeticosapp_trabalho.Rosto"
+    tools:context=".model.Rosto"
     android:background="@color/colorAccent"
     android:orientation="horizontal">
 

@@ -135,7 +135,7 @@
                 android:hint="Digite seu cpf" />
 
 
-            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"

@@ -1,10 +1,12 @@
-package a2017_1.pooa.iff.br.cosmeticosapp_trabalho;
+package a2017_1.pooa.iff.br.cosmeticosapp_trabalho.model;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import a2017_1.pooa.iff.br.cosmeticosapp_trabalho.R;
 
 public class Rosto extends AppCompatActivity {
 

@@ -1,15 +1,16 @@
 package a2017_1.pooa.iff.br.cosmeticosapp_trabalho.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Toast;
 
-import a2017_1.pooa.iff.br.cosmeticosapp_trabalho.Menu_principal;
+import java.util.List;
+
 import a2017_1.pooa.iff.br.cosmeticosapp_trabalho.R;
 import a2017_1.pooa.iff.br.cosmeticosapp_trabalho.adapter.ClickRecyclerViewListener;
+import a2017_1.pooa.iff.br.cosmeticosapp_trabalho.model.Cadastro;
 import io.realm.Realm;
 
 public class CadastroActivity extends AppCompatActivity implements ClickRecyclerViewListener {
@@ -18,23 +19,40 @@ public class CadastroActivity extends AppCompatActivity implements ClickRecycler
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro);
+        setContentView(R.layout.activity_cadastro_detalhe);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.);
+        setSupportActionBar(toolbar);
 
         realm = Realm.getDefaultInstance();
-
-
     }
 
-    public void chamaTelaMenu(View v) {
-        Toast.makeText(this, "Botão funcionando", Toast.LENGTH_SHORT);
-
-        Intent intent = new Intent(CadastroActivity.this, Menu_principal.class);
+    public void onClick(View view) {
+        Intent intent = new Intent(CadastroActivity.this, CadastroDetalheActivity.class);
+        intent.putExtra("id", 0);
         startActivity(intent);
     }
 
 
-    @Override
-    public void onClick(Object object) {
+    private List<Cadastro> getCadastro(){
+
+        return (List)realm.where(Cadastro.class).findAll();
 
     }
+
+    @Override
+    public void onClick(Object object) {
+        Cadastro cadastro = (Cadastro) object;
+        Intent intent = new Intent(CadastroActivity.this,CadastroDetalheActivity.class);
+        intent.putExtra("id",cadastro.getId());
+        startActivity(intent);
+
+    }
+
+    @Override
+    public void finish(){
+        realm.close();
+
+    }
+
+
 }

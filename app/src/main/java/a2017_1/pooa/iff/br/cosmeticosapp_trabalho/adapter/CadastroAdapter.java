@@ -30,7 +30,7 @@ public class CadastroAdapter  extends RecyclerView.Adapter {
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent,
                                                       int viewType) {
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.activity_cadastro, parent, false);
+                .inflate(R.layout.activity_cadastro_detalhe, parent, false);
         CadastroViewHolder cadastroViewHolder = new CadastroViewHolder(view);
         return cadastroViewHolder;
     }

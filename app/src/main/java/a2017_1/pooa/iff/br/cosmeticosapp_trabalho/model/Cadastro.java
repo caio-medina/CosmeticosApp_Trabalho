@@ -5,9 +5,7 @@ import java.io.Serializable;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
-/**
- * Created by user on 14/08/17.
- */
+
 public class Cadastro extends RealmObject implements Serializable {
 
     @PrimaryKey
@@ -20,6 +18,8 @@ public class Cadastro extends RealmObject implements Serializable {
 
     public Cadastro() {
     }
+
+
 
     public Cadastro(int id, String nome, String login, String senha, String email, String cpf) {
         this.id = id;

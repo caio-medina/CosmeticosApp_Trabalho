@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import a2017_1.pooa.iff.br.cosmeticosapp_trabalho.Menu_principal;
+import a2017_1.pooa.iff.br.cosmeticosapp_trabalho.model.Menu_principal;
 import a2017_1.pooa.iff.br.cosmeticosapp_trabalho.R;
 
 public class LoginActivity extends AppCompatActivity {
