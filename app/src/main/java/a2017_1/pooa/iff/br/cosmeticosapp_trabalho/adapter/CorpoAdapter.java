@@ -22,7 +22,7 @@ public class CorpoAdapter extends ArrayAdapter <Corpo> {
     private final ArrayList<Corpo> itens;
 
     public CorpoAdapter(Context context, ArrayList<Corpo> itens){
-        super(context, R.layout.lista_corpo, itens);
+        super(context, R.layout.lista_produto, itens);
         this.context = context;
         this.itens = itens;
     }
@@ -30,7 +30,7 @@ public class CorpoAdapter extends ArrayAdapter <Corpo> {
     public View getView(int position, View convertView, ViewGroup parent){
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View rowView = inflater.inflate(R.layout.lista_corpo, parent, false);
+        View rowView = inflater.inflate(R.layout.lista_produto, parent, false);
 
         TextView nome = (TextView) rowView.findViewById(R.id.txNome);
         TextView fabricante = (TextView) rowView.findViewById(R.id.txFabricante);

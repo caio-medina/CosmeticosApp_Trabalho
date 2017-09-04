@@ -13,24 +13,33 @@
             android:layout_height="wrap_content"
             android:id="@+id/txNome"
             android:textSize="20dp"
-            android:text="Sombra"
+            android:text="Nome do produto"
             android:textColor="@color/abc_background_cache_hint_selector_material_dark" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Boticário"
+            android:text="Fabricante"
             android:id="@+id/txFabricante"
             android:textColor="@color/abc_background_cache_hint_selector_material_dark" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="39.90"
+            android:text="Preço"
             android:id="@+id/txPreco"
             android:textColor="@color/abc_background_cache_hint_selector_material_dark" />
 
+        <!--
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:id="@+id/checkBox" />
+-->
     </LinearLayout>
+
+
 
 
 </LinearLayout>

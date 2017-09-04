@@ -28,7 +28,25 @@ public class ItensCorpo extends AppCompatActivity {
 
     private ArrayList<Corpo> acidionarItemCorpo() {
         ArrayList<Corpo> corpos = new ArrayList<Corpo>();
-        Corpo c = new Corpo("Perfume", "Boticario", "39.90");
+        Corpo c = new Corpo("Perfume", "Boticario", "79.90", null);
+        corpos.add(c);
+        c = new Corpo("Hidratante", "Boticario", "39.90", null);
+        corpos.add(c);
+        c = new Corpo("Perfume", "Boticario", "39.90", null);
+        corpos.add(c);
+        c = new Corpo("Sabonete", "Boticario", "4.99", null);
+        corpos.add(c);
+        c = new Corpo("Esmalte", "Boticario", "7.99", null);
+        corpos.add(c);
+        c = new Corpo("Perfume", "Natura", "69.99", null);
+        corpos.add(c);
+        c = new Corpo("Desodorante", "Natura", "9.90", null);
+        corpos.add(c);
+        c = new Corpo("Creme", "Natura", "14.90", null);
+        corpos.add(c);
+        c = new Corpo("Sabonete Líquido", "Natura", "8.90", null);
+        corpos.add(c);
+        c = new Corpo("Lixa de unha", "Natura", "1.99", null);
         corpos.add(c);
 
         return corpos;

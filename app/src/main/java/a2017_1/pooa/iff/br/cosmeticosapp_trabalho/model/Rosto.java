@@ -1,5 +1,7 @@
 package a2017_1.pooa.iff.br.cosmeticosapp_trabalho.model;
 
+import android.widget.CheckBox;
+
 /**
  * Created by user on 03/09/17.
  */
@@ -7,12 +9,14 @@ public class Rosto {
 
 
     private String nome, fabricante, preco;
+    CheckBox add;
 
-    public Rosto(String nome, String fabricante, String preco){
+    public Rosto(String nome, String fabricante, String preco, CheckBox add){
 
         this.nome = nome;
         this.fabricante = fabricante;
         this.preco = preco;
+        this.add = add;
 
     }
 

@@ -21,7 +21,7 @@ public class RostoAdapter extends ArrayAdapter <Rosto> {
     private final ArrayList<Rosto> itens;
 
     public RostoAdapter(Context context, ArrayList<Rosto> itens){
-        super(context, R.layout.lista_rosto, itens);
+        super(context, R.layout.lista_produto, itens);
         this.context = context;
         this.itens = itens;
     }
@@ -29,7 +29,7 @@ public class RostoAdapter extends ArrayAdapter <Rosto> {
     public View getView(int position, View convertView, ViewGroup parent){
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View rowView = inflater.inflate(R.layout.lista_rosto, parent, false);
+        View rowView = inflater.inflate(R.layout.lista_produto, parent, false);
 
         TextView nome = (TextView) rowView.findViewById(R.id.txNome);
         TextView fabricante = (TextView) rowView.findViewById(R.id.txFabricante);

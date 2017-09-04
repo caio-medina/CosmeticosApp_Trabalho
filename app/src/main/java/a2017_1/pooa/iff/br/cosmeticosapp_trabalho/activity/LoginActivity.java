@@ -23,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     int id;
     Cadastro cadastro;
     private Realm realm;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         id = (int) intent.getSerializableExtra("id");
         realm = Realm.getDefaultInstance();
 
-        btbuscar.setOnClickListener( new View.OnClickListener(){
+        btbuscar.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
@@ -49,20 +50,29 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-    public void buscar(){
-        String login, senha;
+    public void buscar() {
+/*
+        int p,max;
+        p = 0;
+
+        max = realm.where(Cadastro.class).max("id");
 
         RealmResults<Cadastro> cadastros = realm.where(Cadastro.class).findAll();
 
+        if (p<max){
+            cadastros.get(p).getLogin() == login && cadastros.get(p).getSenha() == senha;
 
-        Toast.makeText(this,"Usuário não foi encontrado",Toast.LENGTH_LONG).show();
-        this.finish();
+            Toast.makeText(this,"Usuário foi encontrado",Toast.LENGTH_LONG).show();
+            this.finish();
+            else {
 
-        Toast.makeText(this,"Usuário foi encontrado",Toast.LENGTH_LONG).show();
-        this.finish();
+                Toast.makeText(this,"Usuário não foi encontrado",Toast.LENGTH_LONG).show();
+                this.finish();
+                p = p+1;
 
+            }
+
+            */
     }
 
-
 }
-

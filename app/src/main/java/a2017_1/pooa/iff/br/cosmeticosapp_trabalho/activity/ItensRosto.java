@@ -28,8 +28,27 @@ public class ItensRosto extends AppCompatActivity {
 
     private ArrayList<Rosto> acidionarItemRosto() {
         ArrayList<Rosto> rostos = new ArrayList<Rosto>();
-        Rosto r = new Rosto("Sombra", "Boticario", "39.90");
+        Rosto r = new Rosto("Sombra", "Boticario", "39.90", null);
         rostos.add(r);
+        r = new Rosto("Sombra", "Boticario", "14.90", null);
+        rostos.add(r);
+        r = new Rosto("Base", "Boticario", "19.90", null);
+        rostos.add(r);
+        r = new Rosto("Batom", "Boticario", "9.90", null);
+        rostos.add(r);
+        r = new Rosto("Blush", "Boticario", "3.90", null);
+        rostos.add(r);
+        r = new Rosto("Delineador", "Boticario", "39.90", null);
+        rostos.add(r);
+        r = new Rosto("Sombra", "Natura", "16.90", null);
+        rostos.add(r);
+        r = new Rosto("Base", "Natura", "22.90", null);
+        rostos.add(r);
+        r = new Rosto("Kit de pinceis", "Natura", "59.90", null);
+        rostos.add(r);
+        r = new Rosto("Batom", "Natura", "5.90", null);
+        rostos.add(r);
+
 
         return rostos;
     }
