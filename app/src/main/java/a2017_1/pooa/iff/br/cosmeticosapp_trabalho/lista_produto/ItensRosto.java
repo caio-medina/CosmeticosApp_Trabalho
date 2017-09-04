@@ -1,4 +1,4 @@
-package a2017_1.pooa.iff.br.cosmeticosapp_trabalho.activity;
+package a2017_1.pooa.iff.br.cosmeticosapp_trabalho.lista_produto;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
