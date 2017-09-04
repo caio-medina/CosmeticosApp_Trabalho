@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txNome"
+            android:textSize="20dp"
+            android:text="Sombra"
+            android:textColor="@color/abc_background_cache_hint_selector_material_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boticário"
+            android:id="@+id/txFabricante"
+            android:textColor="@color/abc_background_cache_hint_selector_material_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="39.90"
+            android:id="@+id/txPreco"
+            android:textColor="@color/abc_background_cache_hint_selector_material_dark" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

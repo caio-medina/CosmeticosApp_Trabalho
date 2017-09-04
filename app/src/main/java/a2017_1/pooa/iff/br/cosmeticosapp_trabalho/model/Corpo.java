@@ -1,25 +1,45 @@
 package a2017_1.pooa.iff.br.cosmeticosapp_trabalho.model;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Toast;
+/**
+ * Created by user on 03/09/17.
+ */
+public class Corpo {
 
-import a2017_1.pooa.iff.br.cosmeticosapp_trabalho.R;
 
-public class Corpo extends AppCompatActivity {
+    private String nome, fabricante, preco;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_corpo);
+    public Corpo(String nome, String fabricante, String preco){
+
+        this.nome = nome;
+        this.fabricante = fabricante;
+        this.preco = preco;
+
     }
 
-    public void chamaTelaCarrinho(View v) {
-        Toast.makeText(this, "Botão funcionando", Toast.LENGTH_SHORT);
 
-        Intent intent = new Intent(Corpo.this, Carrinho.class);
-        startActivity(intent);
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+
+    public String getFabricante() {
+        return fabricante;
+    }
+
+    public void setFabricante(String fabricante) {
+        this.fabricante = fabricante;
+    }
+
+
+    public String getPreco() {
+        return preco;
+    }
+
+    public void setPreco(String preco) {
+        this.preco = preco;
     }
 }

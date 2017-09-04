@@ -30,7 +30,7 @@ public class CadastroAdapter  extends RecyclerView.Adapter {
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent,
                                                       int viewType) {
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.activity_cadastro_detalhe, parent, false);
+                .inflate(R.layout.activity_cadastro, parent, false);
         CadastroViewHolder cadastroViewHolder = new CadastroViewHolder(view);
         return cadastroViewHolder;
     }
@@ -61,10 +61,6 @@ public class CadastroAdapter  extends RecyclerView.Adapter {
 
     }
 
-    // Método responsável por remover um usuário da lista.
-    private void removerItem(int position) {
-
-    }
 
     public class CadastroViewHolder extends RecyclerView.ViewHolder {
 
